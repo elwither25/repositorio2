@@ -1,0 +1,188 @@
+
+header{
+    margin:0;
+    background-color:rosybrown;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    position:fixed;
+    top: 0;
+    width:100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+}
+header a i {
+    color: azure;
+    font-size: 1.2em;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3 ease;
+}
+header nav ul li a:hover{
+    color: #ddd;
+}
+header a i {
+    color: azure;
+    font-size: 1em;
+}
+.seccion_1{
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    background-color:azufre;
+    }
+.acerca_de, .acerca_imagen{
+    gap: 2em;
+    width: 100%;
+    padding: 5px;
+}
+.acerca_de h2{
+    display: flex;
+    justify-content: center;
+    font-size: 20pxs;
+}
+.acerca_de .parrafo_1 .parrafo_2{
+    display: flex;
+    justify-content: center;
+    font-size: 20pxs;
+}
+.acerca_imagen {
+    display: flex;
+    align-items:center;
+justify-content: center;
+}
+.acerca_imagen img{
+    width:70% ;
+    padding: 5px;
+    border-radius: 100%;
+}
+.seccion_2 img {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    padding: 20%;
+    background-image: url(img/il_fullxfull.5517299219_9g2x.webp);
+    background-size: cover;
+    border-radius: 30%;
+}
+footer{
+    background-color: black;
+    margin: 5px;
+    width: 100%s;
+}
+footer div p{
+    color: white;
+}
+footer div h3 {
+    color:lightsalmon;
+    font-size: 20px;
+    margin: 0%;
+}
+.redes{
+    font-size:30px;
+    
+}
+footer .footer_container .redes a i{
+    color: aqua;
+}
+.seccion_3{
+padding: 20px 100px 100px 100px;
+}
+.seccion_3 img {
+    background-color:aquamarine;
+    display:flex;
+    justify-content:space-between;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    border-radius:10px ;
+}
+.tarjetas{
+    display: flex;
+    gap: 30px;
+}
+.izquierda, .centro, .derecha {
+    display: inline-block;
+    border-radius: 12px;   
+    width: 40%;
+    border: 2px solid black
+
+
+}
+.img_tarjeta{
+    display:flex ;
+    justify-content: center;
+}
+.texto_tarjetas h2{
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.texto_tarjetas p{
+    padding: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display:flex;
+    justify-content:space-around ;
+    font-size: 15px;
+}
+#frase{
+background-color: aliceblue;
+}
+
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none
+}
+@media (max-width: 768px){
+#check:checked ~ ul{
+    left: 0;
+    display: block;
+}
+.checkbtn{
+    display: block;
+}
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: 100%;
+    text-align: center;
+    transition: all .5s;
+}
+ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+}
